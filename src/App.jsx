@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="bg-[#F6F6F3] w-full h-full">
         <Header />
-        <main className="mt-12 w-full h-full">
+        <main className="mt-12 w-full h-full p-10">
           <section className="grid max-w-screen-2xl mx-auto md:grid-cols-3 gap-4">
             <h1 className="text-3xl md:text-5xl font-normal border-b-2 border-[#b47655] md:col-span-2 p-4 relative md:before:content-[''] md:before:absolute md:before:w-[50px] md:before:h-[130px] md:before:left-[-60px] md:before:top-[15px] md:before:bg-[#b47655]">
               Maria José Becerra Borrero
@@ -131,11 +131,8 @@ function App() {
           <img
             src={Logo}
             alt="logo"
-            className="block mx-auto w-[350px] h-[350px]"
+            className="block mx-auto w-[250px] h-[250px]"
           />
-          <button className="text-lg cursor-pointer mx-auto bg-green-400 w-12 h-12 rounded-lg">
-            Disponible para trabajar
-          </button>
         </main>
         <Footer />
       </div>

@@ -2,24 +2,52 @@ const SIDE_PROJECT = [
   {
     title: "Travel App",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card`s content.",
-    github: "https://github.com/mariajosebb/random-frases",
-    preview: "https://travelapp.becerrab.dev",
+      "Aplicación web diseñada para la renta de casas y apartamentos en diversos destinos turísticos. La plataforma ofrece una interfaz intuitiva y visualmente atractiva donde los usuarios pueden explorar y reservar alojamientos en ciudades icónicas y lugares exóticos.",
+    github: "https://github.com/mariajosebb/CursoTravel",
+    preview: "https://travel-app.becerrab.dev/",
     stack: ["React", "TailwindCSS", "API"],
   },
   {
     title: "Shopi",
     description:
       "Some quick example text to build on the card title and make up the bulk of the card`s content.",
-    github: "https://github.com/mariajosebb/random-frases",
-    preview: "https://travelapp.becerrab.dev",
+    github: "https://github.com/mariajosebb/shopi",
+    preview: "https://shopi.becerrab.dev/",
   },
   {
     title: "Google Clone",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card`s content.",
+      "Página web que replica la apariencia y el diseño de la página de inicio de Google. La página presenta el logotipo de Google, una barra de búsqueda simplificada y algunos elementos de diseño básicos que se encuentran en la página original.",
+    github: "https://github.com/mariajosebb/Google-Clone",
+    preview: "https://google.becerrab.dev/",
+  },
+  {
+    title: "To Do App",
+    description:
+      "Aplicación web de tareas que permite a los usuarios organizar y gestionar sus pendientes de manera sencilla y efectiva.",
+    github: "https://github.com/mariajosebb/Todo-app-",
+    preview: "https://todo-app.becerrab.dev/",
+  },
+  {
+    title: "Pomodoro",
+    description:
+      "Herramienta que implementa la Técnica Pomodoro, un método de gestión del tiempo popularizado por Francesco Cirillo. La herramienta permite a los usuarios establecer temporizadores para intervalos de trabajo enfocados de 25 minutos, seguidos de breves descansos de 5 minutos.",
+    github: "https://github.com/mariajosebb/pomodoro",
+    preview: "https://pomodoro.becerrab.dev/",
+  },
+  {
+    title: "Calculator",
+    description:
+      "Calculadora web básica que permite a los usuarios realizar las operaciones matemáticas fundamentales: suma, resta, multiplicación y división. La calculadora presenta una interfaz simple y fácil de usar, ideal para usuarios que buscan una herramienta rápida y confiable para realizar cálculos básicos.",
+    github: "https://github.com/mariajosebb/Calculator",
+    preview: "https://calculator.becerrab.dev/",
+  },
+  {
+    title: "Random Quotes",
+    description:
+      "Página web que muestra frases aleatorias al azar cada vez que se recarga la página o se hace click en 'New Quote'.",
     github: "https://github.com/mariajosebb/random-frases",
-    preview: "https://travelapp.becerrab.dev",
+    preview: "https://random-phrases.becerrab.dev/",
   },
 ];
 
@@ -43,20 +71,21 @@ const Projects = () => {
             </h5>
             <p className="mb-4 text-base">{project.description}</p>
             <a
-              href={project.preview}
+              href={project.github}
               target="_blank"
               type="button"
-              className="inline-block  rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-gray-800 shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              className="inline-block border border-[#d0dbdd] rounded p-2 mr-4 text-xs uppercase text-gray-800 "
               data-twe-ripple-init
               data-twe-ripple-color="light"
             >
+              <i class="fa-brands fa-github mr-2"></i>
               Github
             </a>
             <a
               href={project.preview}
-              className="col-span-1 p-4 bg-[#d0dbdd] rounded cursor-pointer"
+              className="p-2 border border-[#d0dbdd] bg-[#d0dbdd] rounded cursor-pointer text-xs uppercase"
             >
-              <i className="fa-solid fa-shop" />
+              <i className="fa-solid fa-code mr-2"></i>
               Preview
             </a>
           </div>
